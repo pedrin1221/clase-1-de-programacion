@@ -1,0 +1,123 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+      String nombres="";
+    String apellidos="";
+    
+    int edad=0;
+    char genero=' ';
+    string telefono="";
+    nombres="Deivid";
+    apellidos="Lopez";
+    edad=21;
+    telefono="327735635";
+    genero='M';
+    Console.WriteLine("nombre: "+ nombres + " " + apellidos);
+    Console.WriteLine("edad: " + edad);
+    Console.WriteLine("genero: " + genero);
+    Console.WriteLine("telefono: " + telefono);
+//--------------------------------------------------
+    string nom1=" ", nom2=" ", ape1="", ape2="";
+    float nota1=0, nota2=0, nota3=0, def=0;
+    Console.WriteLine("Digite su primer nombre");
+    nom1 = Console.ReadLine();
+    Console.WriteLine("Digite su segundo nombre");
+    nom2 = Console.ReadLine();
+    Console.WriteLine("Digite su primer apellido");
+    ape1 = Console.ReadLine();
+    Console.WriteLine("Digite su segundo apellido");
+    ape2 = Console.ReadLine();
+    Console.WriteLine("Digite su primera nota");
+    nota1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Digite su segunda nota");
+    nota2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Digite su tercera nota");
+    nota3 = float.Parse(Console.ReadLine());
+    def=(nota1+nota2+nota3)/3;
+    Console.WriteLine("Su nombre completo es: {0} {1} {2} {3}",nom1,nom2,ape1,ape2);
+    Console.WriteLine("Su nota definitiva es: "+def);
+//----------------------------------------------------------------------------------
+    int num=0, d1=0, d2=0, d3=0, d4=0;
+    Console.WriteLine("ingrese un numero de tres digitos:");
+    num=int.Parse(Console.ReadLine());
+    d1=num/1000;
+    d2=(num/100)%10;
+    d3=(num/10)%10;
+    d4=num%10;
+    Console.WriteLine("first digit is: {0},second is: {1},third is: {2}, four is: {3}" ,d1,d2,d3,d4);
+    
+    
+  }
+}
+
+
+
+
+                                     PAGINA 2 DE LOS CODIGOS
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+using System;
+//pedrin ladron
+class Program {
+  public static void Main (string[] args) {
+    //---------------------------------------------------------------
+    float n1=0,n2=0;
+    float a1=0,a2=0;
+    float b1=0,b2=0;
+    float c1=0,c2=0;
+    float d1=0,d2=0;
+    Console.WriteLine("para sumar:");
+    Console.WriteLine("ingrese el primer numero: ");
+    n1=float.Parse(Console.ReadLine());
+    Console.WriteLine("ingrese el segundo numero:");
+    n2=float.Parse(Console.ReadLine());
+    
+    float res= n1+n2;
+    Console.WriteLine("la suma de " + n1 + "+" + n2 + " es= " + res);
+//----------------------------------------------------------------------
+    Console.WriteLine("para restar");
+    
+    Console.WriteLine("ingrese el primer numero: ");
+    a1=float.Parse(Console.ReadLine());
+    Console.WriteLine("ingrese el segundo numero:");
+    a2=float.Parse(Console.ReadLine());
+    
+    float res1= a1-a2;
+    Console.WriteLine("la resta de " + a1 + "-" + a2 + " es= " + res1);
+    //------------------------------------------------------------------
+    Console.WriteLine("para multiplicar:");
+      
+    Console.WriteLine("ingrese el primer numero: ");
+    b1=float.Parse(Console.ReadLine());
+    Console.WriteLine("ingrese el segundo numero:");
+    b2=float.Parse(Console.ReadLine());
+    
+    float res2= b1*b2; 
+    
+    Console.WriteLine("la multiplicacion de " + b1 + "*" + b2 + " es= " + res2);
+    //-------------------------------------------------------------------------
+    Console.WriteLine("para dividir:");
+      
+    Console.WriteLine("ingrese el primer numero: ");
+    c1=float.Parse(Console.ReadLine());
+    Console.WriteLine("ingrese el segundo numero:");
+    c2=float.Parse(Console.ReadLine());
+    
+    float res3= c1/c2;
+    Console.WriteLine("la division entre " + c1 + " y " + c2 + " es= " + res3);
+    //-------------------------------------------------------------------------
+    Console.WriteLine("para averiguar el residuo de la division:");
+      
+    Console.WriteLine("ingrese el primer numero: ");
+    d1=float.Parse(Console.ReadLine());
+    Console.WriteLine("ingrese el segundo numero:");
+    d2=float.Parse(Console.ReadLine());
+
+    
+    float res4= d1%d2;
+    Console.WriteLine("el residuo entre la division " + d1 + " y " + d2 + " es= " + res4);
+    }
+}
+  
+
+
